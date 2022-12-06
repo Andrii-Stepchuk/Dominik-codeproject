@@ -1,0 +1,35 @@
+{
+  "name": "web-template-explorer-server",
+  "version": "1.0.0",
+  "description": "The explorer for Web templates",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client-install": "cd client && npm install",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/mentorg/codeproject.git"
+  },
+  "keywords": [
+    "web",
+    "template",
+    "template",
+    "explorer"
+  ],
+  "author": "Dominik Dolancic",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mentorg/codeproject#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.2"
+  }
+}
